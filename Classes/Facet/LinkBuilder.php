@@ -273,7 +273,7 @@ class LinkBuilder extends Query\LinkBuilder
             // special case if TS option "faceting.singleFacetMode = 1" && "facet.singleOptionMode = 1"
             // kill other parameters and use only current facet
             $filterParameters = array($this->facetName . ':' . $this->facetOption->getUrlValue());
-            
+
         } else {
             // facet not found, add facet
             $filterParameters[] = $this->facetName . ':' . $this->facetOption->getUrlValue();
